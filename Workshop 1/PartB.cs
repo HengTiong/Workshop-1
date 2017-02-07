@@ -15,7 +15,7 @@ namespace Workshop_1
             Console.Write("Please input a double precision number ");
             double numDouble = double.Parse(Console.ReadLine());
             Console.WriteLine("The answer is " + Math.Sqrt(numDouble));
-
+            
             //C# Workshop 1B Qns. 2
 
             Console.Write("\nPlease input a double precision number ");
@@ -48,11 +48,11 @@ namespace Workshop_1
             //C# Workshop 1B Qns. 6
 
             Console.Write("\nPlease input X1, X2, Y1, and Y2, all separated by a \" \" (X1 X2 Y1 Y2): ");
-            String xyValue = Console.ReadLine();
-            String xValue1String = xyValue.Split(' ')[0];
-            String xValue2String = xyValue.Split(' ')[1];
-            String yValue1String = xyValue.Split(' ')[2];
-            String yValue2String = xyValue.Split(' ')[3];
+            string xyValue = Console.ReadLine();
+            string xValue1String = xyValue.Split(' ')[0];
+            string xValue2String = xyValue.Split(' ')[1];
+            string yValue1String = xyValue.Split(' ')[2];
+            string yValue2String = xyValue.Split(' ')[3];
             double xValue1 = double.Parse(xValue1String);
             double xValue2 = double.Parse(xValue2String);
             double yValue1 = double.Parse(yValue1String);
@@ -69,12 +69,15 @@ namespace Workshop_1
             Console.WriteLine("Total fare for taxi ride is " + (minFixedCharge + distanceTravelled * 0.40));
 
             //C# Workshop Qns. 8
+            //Question only requires rounding of value to the nearest 10 cents value
+        
             Console.Write("\nWhat is the distance travelled? ");
             distanceTravelled = double.Parse(Console.ReadLine());
             double resultFare = Math.Round((minFixedCharge + distanceTravelled * 0.40), 1);
             Console.WriteLine("Total fare for taxi ride is {0:0.00}", resultFare);
 
             //C# Workshop Qns. 9
+            //Question demands that the fare will always round up to the next highest 10 cents, as compared to rounding to the nearest value
             Console.Write("\nWhat is the distance travelled? ");
             distanceTravelled = double.Parse(Console.ReadLine());
             resultFare = Math.Ceiling((minFixedCharge + distanceTravelled * 0.40) * 10) / 10;
@@ -82,7 +85,7 @@ namespace Workshop_1
 
             //C# Workshop Qns. 10
             Console.Write("\nInput the lengths of the 3 sides, separated by \" \", (a b c) ");
-            String triangleABC = Console.ReadLine();
+            string triangleABC = Console.ReadLine();
             double sideA = double.Parse(triangleABC.Split(' ')[0]);
             double sideB = double.Parse(triangleABC.Split(' ')[1]);
             double sideC = double.Parse(triangleABC.Split(' ')[2]);

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Workshop_1.PartB</StartupObject>
+    <StartupObject>Workshop_1.PartC</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,7 +48,10 @@
   <ItemGroup>
     <Compile Include="PartA.cs" />
     <Compile Include="PartB.cs" />
+    <Compile Include="PartC.cs" />
+    <Compile Include="PartD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
